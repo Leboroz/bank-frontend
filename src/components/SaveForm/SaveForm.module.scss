@@ -1,0 +1,38 @@
+.background {
+  display: none;
+  background-color: rgba($color: #000, $alpha: 0.1);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  .close {
+    position: absolute;
+    right: 2rem;
+    background-color: transparent;
+    border: 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    padding: 2rem;
+    h2 {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.show {
+  display: block;
+}

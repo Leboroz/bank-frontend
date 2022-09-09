@@ -1,0 +1,23 @@
+.group {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  position: relative;
+
+  label {
+    font-size: 0.75rem;
+  }
+
+  input {
+    border: 0;
+    border-bottom: 0.75px solid rgba($color: #000, $alpha: 0.2);
+    padding: 0.25rem;
+    outline: 0;
+
+    &:focus {
+      border-color: #000;
+    }
+  }
+}
