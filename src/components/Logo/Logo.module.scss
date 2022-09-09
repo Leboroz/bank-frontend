@@ -1,0 +1,37 @@
+$logo-color: #FCDD11;
+$header-color: #1C264D;
+
+.container {
+  display: flex;
+  gap: 0.75rem;
+  .logo {
+    aspect-ratio: 1 / 1;
+    background-color: $logo-color;
+    position: relative;
+    border-bottom-left-radius: 25%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 35%;
+      height: 35%;
+      right: 15%;
+      top: 15%;
+      background-color: #000;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 35%;
+      height: 35%;
+      right: 15%;
+      top: 15%;
+      transform: translate(-50%, 50%);
+      background-color: $logo-color;
+    }
+  }
+  h1 {
+    color: $header-color;
+  }
+}

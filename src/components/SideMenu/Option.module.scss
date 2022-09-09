@@ -1,0 +1,10 @@
+.link {
+  list-style: none;
+  padding: 1rem;
+  border-bottom: 0.5px solid rgba($color: #eee, $alpha: 1);
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}
